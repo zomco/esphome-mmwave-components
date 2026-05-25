@@ -55,7 +55,7 @@ jobs:
       # Artifact name: firmware-{name}  e.g. firmware-r60abd1-ESP32-C3
       # Artifact contents: manifest.json, *.factory.bin, *.ota.bin
       - name: Upload firmware artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: firmware-${{ steps.build.outputs.name }}
           path: ${{ steps.build.outputs.name }}/
